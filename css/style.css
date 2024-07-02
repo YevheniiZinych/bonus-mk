@@ -24,11 +24,16 @@ body {
   width: 1150px;
   height: 100%;
   margin: 0 auto;
-
-  outline: 1px solid tomato;
 }
 
 /* Header */
+
+.header {
+  position: absolute;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
 
 .header-text {
   font-size: 11px;
@@ -63,9 +68,22 @@ body {
 
 /* Hero */
 
+.hero {
+  width: 1280px;
+  height: 784px;
+
+  margin: 0 auto;
+
+  background: no-repeat url(../img/hero-bg.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
 .hero-title {
+  display: inline-block;
   width: 838px;
 
+  margin-top: 400px;
   margin-bottom: 14px;
 
   font-size: 57px;
@@ -97,10 +115,10 @@ body {
   border-radius: 100px;
 }
 
-.hero-link:is(:hover, :focus) {
+/* .hero-link:is(:hover, :focus) {
   background-color: var(--violet-color);
   transition: var(--main-transition);
-}
+} */
 
 /* Benefits */
 .benefits {
