@@ -26,6 +26,13 @@ body {
   margin: 0 auto;
 }
 
+.animate__bounce:hover {
+  display: inline-block;
+  animation: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
 /* Header */
 
 .header {
