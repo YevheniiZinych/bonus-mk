@@ -50,6 +50,33 @@ body {
   color: var(--creamy-color);
 }
 
+.header-nav-link.current {
+  border-bottom: 2px solid var(--creamy-second);
+  border-radius: 2px;
+}
+
+.header-nav-link::after {
+  content: "";
+  position: absolute;
+  display: block;
+
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+
+  border-radius: 2px;
+
+  background-color: var(--creamy-second);
+
+  opacity: 0;
+
+  transition: opacity 250ms linear;
+}
+
+.header-nav-link:hover::after {
+  opacity: 1;
+}
+
 .header-flex {
   display: flex;
   justify-content: space-around;
@@ -71,6 +98,11 @@ body {
   gap: 38px;
 
   margin-left: auto;
+}
+
+.header-nav-link {
+  position: relative;
+  padding: 15px 0;
 }
 
 /* Hero */
@@ -114,18 +146,42 @@ body {
 }
 
 .hero-link {
+  position: relative;
   padding: 14px 34px;
 
   color: var(--white-color);
   background-color: var(--btn-hero-bg);
 
   border-radius: 100px;
+  z-index: 1;
 }
 
-/* .hero-link:is(:hover, :focus) {
+.hero-link::after {
+  content: "";
+  position: absolute;
+  display: block;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: inherit;
+
+  transform: scale(0);
+  transform-origin: center center;
+
+  transition: transform 250ms ease-in-out;
+
   background-color: var(--violet-color);
-  transition: var(--main-transition);
-} */
+
+  z-index: -1;
+}
+
+.hero-link:is(:hover, :focus)::after {
+  transform: scale(1);
+}
 
 /* Benefits */
 .benefits {
@@ -140,6 +196,13 @@ body {
   gap: 106px;
   align-items: center;
   justify-content: space-between;
+}
+
+.benefits-item .benefits-title-wrapp {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
 }
 
 .benefits-item:nth-child(even) {
@@ -173,6 +236,39 @@ body {
   width: 460px;
 }
 
+.benefits-item:nth-child(2) .benefits-number-wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 74px;
+  height: 74px;
+
+  border-radius: 50%;
+  background-color: var(--violet-lite);
+}
+
+.benefits-item:nth-child(3) .benefits-number-wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 74px;
+  height: 74px;
+
+  border-radius: 50%;
+  background-color: var(--orange-pseudo-el);
+}
+
+.benefits-item:last-child .benefits-number-wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 74px;
+  height: 74px;
+
+  border-radius: 50%;
+  background-color: var(--mint-color);
+}
+
 .benefits-item:not(:first-child) {
   height: 725px;
 }
@@ -190,6 +286,7 @@ body {
 .benefits-item:nth-child(n + 2) .wrapper {
   margin-top: 180px;
 }
+
 .benefits-title {
   font-weight: 400;
   font-size: 19px;
