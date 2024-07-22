@@ -15,38 +15,43 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container header-flex">
+      <div class="container header--flex">
         <nav class="header-nav">
-          <ul class="header-nav-list">
-            <li class="header-nav-item">
-              <a class="header-nav-link header-text current" href="#"
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a
+                class="header-nav__link header__text header-nav__link--current"
+                href="#"
                 >How It Works</a
               >
             </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link header-text" href="#">WHAT TO EXPECT</a>
+            <li class="header-nav__item">
+              <a class="header-nav__link header__text" href="#"
+                >WHAT TO EXPECT</a
+              >
             </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link header-text" href="#">REVIEWS</a>
+            <li class="header-nav__item">
+              <a class="header-nav__link header__text" href="#">REVIEWS</a>
             </li>
-            <li class="header-nav-item">
-              <a class="header-nav-link header-text" href="#">COMPANY</a>
+            <li class="header-nav__item">
+              <a class="header-nav__link header__text" href="#">COMPANY</a>
             </li>
           </ul>
         </nav>
         <ul class="header-contacts">
-          <li class="header-contacts-item">
-            <a class="header-contacts-link header-text" href="tel:+18775596227"
+          <li class="header-contacts__item">
+            <a
+              class="header-contacts__link header__text"
+              href="tel:+18775596227"
               >1-877-559-6227</a
             >
           </li>
-          <li class="header-contacts-item">
-            <a class="header-contacts-link header-text" href="#"
+          <li class="header-contacts__item">
+            <a class="header-contacts__link header__text" href="#"
               >GET MY BONUS OFFER</a
             >
           </li>
@@ -56,18 +61,18 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">
+          <h1 class="hero__title">
             Sell your home without missing out on its future worth.
           </h1>
-          <p class="hero-text">
+          <p class="hero__text">
             We're putting more wealth back into the hands of homeowners.
           </p>
-          <ul class="hero-list">
-            <li class="hero-item">
-              <a href="#" class="hero-link">Get My Bonus Offer</a>
+          <ul class="hero-btn">
+            <li class="hero-btn__item">
+              <a href="#" class="hero-btn__link">Get My Bonus Offer</a>
             </li>
-            <li class="hero-item">
-              <a href="#" class="hero-link">How It Works</a>
+            <li class="hero-btn__item">
+              <a href="#" class="hero-btn__link">How It Works</a>
             </li>
           </ul>
         </div>
@@ -75,13 +80,13 @@
       <section class="benefits">
         <div class="container">
           <ul class="benefits-list">
-            <li class="benefits-item">
+            <li class="benefits-list__item">
               <div class="wrapper">
-                <p class="benefits-subtitle">
+                <p class="benefits-list__subtitle">
                   Bonus™ lets you sell your home AND continue building equity.
                 </p>
 
-                <p class="benefits-text">
+                <p class="benefits-list__text">
                   When selling your home to Bonus™, not only do you get money
                   for your home today, but we let you share in your home's
                   future value by keeping a percentage of ownership to sell
@@ -92,26 +97,30 @@
               <img
                 src="./img/value.png"
                 alt="profit from sale "
-                class="benefits-img"
+                class="benefits-list__img"
               />
             </li>
-            <li class="benefits-item">
+            <li class="benefits-list__item">
               <div class="wrapper">
-                <div class="benefits-title-wrapp">
-                  <div class="benefits-number-wrapp">
-                    <svg class="benefits-item-number" width="17" height="24">
+                <div class="benefits-list__title--wrapp">
+                  <div class="benefits-list__icon--wrapp">
+                    <svg
+                      class="benefits-list__item--icon"
+                      width="17"
+                      height="24"
+                    >
                       <use href="./img/sprite.svg#one"></use>
                     </svg>
                   </div>
 
-                  <h2 class="benefits-title">Bonus Your Home Today</h2>
+                  <h2 class="benefits-list__title">Bonus Your Home Today</h2>
                 </div>
-                <p class="benefits-subtitle">
+                <p class="benefits-list__subtitle">
                   Sell your equity to Bonus™ and turn your home into a long-term
                   investment.
                 </p>
-                <a href="#" class="benefits-link">Expand</a>
-                <p class="benefits-text">
+                <a href="#" class="benefits-list__link">Expand</a>
+                <p class="benefits-list__text">
                   Selling your home doesn't have to mean giving up its future
                   worth. Bonus™ lets you sell your current equity, move out and
                   still keep ownership in your home. With no showings, no
@@ -124,26 +133,30 @@
               <img
                 src="./img/sell-img.jpg"
                 alt="a picture of a house"
-                class="benefits-img"
+                class="benefits-list__img"
               />
             </li>
-            <li class="benefits-item">
+            <li class="benefits-list__item">
               <div class="wrapper">
-                <div class="benefits-title-wrapp">
-                  <div class="benefits-number-wrapp">
-                    <svg class="benefits-item-number" width="17" height="24">
+                <div class="benefits-list__title--wrapp">
+                  <div class="benefits-list__icon--wrapp">
+                    <svg
+                      class="benefits-list__item--icon"
+                      width="17"
+                      height="24"
+                    >
                       <use href="./img/sprite.svg#two"></use>
                     </svg>
                   </div>
 
-                  <h2 class="benefits-title">Keep Ownership & Move On</h2>
+                  <h2 class="benefits-list__title">Keep Ownership & Move On</h2>
                 </div>
-                <p class="benefits-subtitle">
+                <p class="benefits-list__subtitle">
                   As your investment partner, Bonus™ takes care of your home so
                   you can move on without worry or costs.
                 </p>
-                <a href="#" class="benefits-link">Expand</a>
-                <p class="benefits-text">
+                <a href="#" class="benefits-list__link">Expand</a>
+                <p class="benefits-list__text">
                   With Bonus™, your home receives our white-glove management and
                   care. We take care of everything from maintenance, repairs,
                   and all other expenses to optimize the home for long-term
@@ -156,25 +169,29 @@
               <img
                 src="./img/partner.jpg"
                 alt="women with contract"
-                class="benefits-img"
+                class="benefits-list__img"
               />
             </li>
-            <li class="benefits-item">
+            <li class="benefits-list__item">
               <div class="wrapper">
-                <div class="benefits-title-wrapp">
-                  <div class="benefits-number-wrapp">
-                    <svg class="benefits-item-number" width="17" height="24">
+                <div class="benefits-list__title--wrapp">
+                  <div class="benefits-list__icon--wrapp">
+                    <svg
+                      class="benefits-list__item--icon"
+                      width="17"
+                      height="24"
+                    >
                       <use href="./img/sprite.svg#thre"></use>
                     </svg>
                   </div>
-                  <h2 class="benefits-title">Sell Again in 5-30 Years</h2>
+                  <h2 class="benefits-list__title">Sell Again in 5-30 Years</h2>
                 </div>
-                <p class="benefits-subtitle">
+                <p class="benefits-list__subtitle">
                   Unlock your bonus wealth. As your home value rises throughout
                   the years, so does your future net-worth.
                 </p>
-                <a href="#" class="benefits-link">Expand</a>
-                <p class="benefits-text">
+                <a href="#" class="benefits-list__link">Expand</a>
+                <p class="benefits-list__text">
                   As partners in the home, when you win, we win. Bonus™ allows
                   you to keep ownership in the home and keep building equity
                   over the years to cash out later when the home goes up in
@@ -185,7 +202,7 @@
               <img
                 src="./img/family.jpg"
                 alt="father and two sons"
-                class="benefits-img"
+                class="benefits-list__img"
               />
             </li>
           </ul>

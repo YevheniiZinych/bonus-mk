@@ -1,0 +1,15 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+
+  color: var(--main-color);
+}
+
+.animate__bounce:hover {
+  display: inline-block;
+  animation: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}

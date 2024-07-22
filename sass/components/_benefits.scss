@@ -1,0 +1,151 @@
+.benefits {
+  width: 1280px;
+  margin: 0 auto;
+
+  background-color: $creamy-color;
+}
+
+.benefits-list {
+  &__title {
+    font-weight: 400;
+    font-size: 19px;
+    line-height: calc(36 / 16);
+  }
+
+  &__subtitle {
+    font-size: 35px;
+    line-height: calc(45 / 35);
+
+    margin-bottom: 18px;
+  }
+
+  &__text {
+    width: 490px;
+    line-height: calc(22 / 14);
+  }
+
+  &__title--wrapp {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 106px;
+    align-items: center;
+    justify-content: space-between;
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    &:nth-child(1) {
+      height: 486px;
+
+      & .benefits-subtitle {
+        width: 507px;
+
+        margin-bottom: 15px;
+
+        font-size: 54px;
+        line-height: calc(58 / 54);
+      }
+
+      & .benefits-text {
+        width: 452px;
+        line-height: calc(22 / 16);
+      }
+
+      & img {
+        width: 539px;
+        height: 283px;
+      }
+    }
+
+    &:nth-child(2) {
+      .benefits-subtitle {
+        width: 460px;
+      }
+
+      .benefits-list__icon--wrapp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 74px;
+        height: 74px;
+
+        border-radius: 50%;
+        background-color: $violet-lite;
+      }
+    }
+
+    &:nth-child(3) {
+      .benefits-list__icon--wrapp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 74px;
+        height: 74px;
+
+        border-radius: 50%;
+        background-color: $orange-pseudo-el;
+      }
+    }
+
+    &:last-child {
+      .benefits-list__icon--wrapp {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 74px;
+        height: 74px;
+
+        border-radius: 50%;
+        background-color: $mint-color;
+      }
+    }
+
+    &:not(:first-child) {
+      height: 725px;
+
+      & img {
+        width: 518px;
+        height: 500px;
+      }
+    }
+
+    &:nth-child(n + 2) .wrapper {
+      margin-top: 180px;
+    }
+  }
+}
+
+.benefits-list__link {
+  position: relative;
+  display: inline-block;
+
+  margin-bottom: 48px;
+  width: 85px;
+
+  color: $main-color;
+
+  text-transform: uppercase;
+
+  border-bottom: 2px solid $main-color;
+
+  &::after {
+    position: absolute;
+    content: " ";
+
+    right: 3px;
+    top: 7px;
+
+    width: 15px;
+    height: 30px;
+
+    background-image: url("../img/arrow.svg");
+    background-repeat: no-repeat;
+  }
+}
