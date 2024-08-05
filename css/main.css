@@ -65,6 +65,26 @@ a {
   margin: 0 auto;
 }
 
+.hero-btn__link {
+  padding: 14px 34px;
+  color: #ffffff;
+  background-color: rgba(228, 216, 204, 0.5);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.benefits-list__item:last-child .benefits-list__icon--wrapp, .benefits-list__item:nth-child(3) .benefits-list__icon--wrapp, .benefits-list__item:nth-child(2) .benefits-list__icon--wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header {
   position: absolute;
   left: 50%;
@@ -164,10 +184,6 @@ a {
 }
 .hero-btn__link {
   position: relative;
-  padding: 14px 34px;
-  color: #ffffff;
-  background-color: rgba(228, 216, 204, 0.5);
-  border-radius: 100px;
   z-index: 1;
 }
 .hero-btn__link::after {
@@ -210,6 +226,14 @@ a {
   font-size: 35px;
   line-height: 1.2857142857;
   margin-bottom: 18px;
+}
+.benefits-list__subtitle:nth-child(1) {
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+}
+.benefits-list__subtitle:nth-child(2) {
+  border-top: 2px dashed blue;
+  border-bottom: 2px dashed blue;
 }
 .benefits-list__text {
   width: 490px;
@@ -263,45 +287,18 @@ a {
   width: 460px;
 }
 .benefits-list__item:nth-child(2) .benefits-list__icon--wrapp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 74px;
   height: 74px;
   border-radius: 50%;
   background-color: #b99fea;
 }
 .benefits-list__item:nth-child(3) .benefits-list__icon--wrapp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 74px;
   height: 74px;
   border-radius: 50%;
   background-color: #eba789;
 }
 .benefits-list__item:last-child .benefits-list__icon--wrapp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 74px;
   height: 74px;
   border-radius: 50%;

@@ -1,0 +1,13 @@
+%btn-link {
+  padding: 14px 34px;
+  color: $white-color;
+  background-color: $btn-hero-bg;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

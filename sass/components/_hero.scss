@@ -38,13 +38,8 @@
   margin-bottom: 116px;
 
   &__link {
+    @extend %btn-link;
     position: relative;
-    padding: 14px 34px;
-
-    color: $white-color;
-    background-color: $btn-hero-bg;
-
-    border-radius: 100px;
     z-index: 1;
   }
 

@@ -1,0 +1,4 @@
+@mixin globalBorder($size, $type, $color) {
+  border-top: $size $type $color;
+  border-bottom: $size $type $color;
+}
